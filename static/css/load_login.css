@@ -1,0 +1,16 @@
+/* Añadir este CSS en tu archivo load_login.css */
+.loader {
+    display: none; /* Oculto por defecto */
+    width: 50px; /* Ajustar el tamaño */
+    height: 50px; /* Ajustar el tamaño */
+    border: 5px solid #f3f3f3; /* Gris claro */
+    border-top: 5px solid #3498db; /* Azul */
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    margin: 20px auto; /* Centrado horizontalmente y margen superior */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

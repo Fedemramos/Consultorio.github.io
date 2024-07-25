@@ -1,0 +1,33 @@
+<body class="p-6 bg-gray-50">
+    <header class="flex flex-col md:flex-row items-center mb-8">
+        <img src="static/image/perfil.png" alt="Perfil Doctor" class="h-20 w-20 rounded-full mr-0 md:mr-4 mb-4 md:mb-0">
+        <div class="text-center md:text-left">
+            <h1 class="text-2xl font-bold text-teal-600">Nombre del médico/a</h1>
+            <h2 class="text-xl text-teal-500">Área de especialidad</h2>
+        </div>
+    </header>
+    <section>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-gray-100 text-black p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold">Turnos del Día</h3>
+                <p class="mt-4 text-2xl font-bold" id="turnos-dia">15</p>
+            </div>
+            <div class="bg-gray-100 text-black p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold">Número de pacientes</h3>
+                <p class="mt-4 text-2xl font-bold" id="numero-pacientes">12</p>
+            </div>
+            <div class="bg-gray-100 text-black p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold">Turnos esta semana</h3>
+                <p class="mt-4 text-2xl font-bold" id="turnos-semana">Completos</p>
+            </div>
+        </div>
+    </section>
+    
+    <form class="p-6 rounded-lg">
+        <h2 class="text-sm font-semibold text-gray-700 mb-4">Buscar Paciente</h2>
+        <div class="flex flex-col md:flex-row items-center mb-4">
+            <input type="text" class="flex-grow p-2 border border-gray-300 rounded-lg mb-4 md:mb-0 md:mr-4" placeholder="Nombre del paciente">
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-teal-700 transition duration-300">Buscar</button>
+        </div>
+    </form>
+</body>

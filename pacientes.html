@@ -1,0 +1,79 @@
+<body class="bg-white p-6">
+    <h2 class="text-2xl font-bold mb-4">Gestión de Pacientes</h2>
+    <form id="form-paciente" class="mb-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="mb-4">
+            <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+        </div>
+        <div class="mb-4">
+            <label for="apellido" class="block text-sm font-medium text-gray-700">Apellido</label>
+            <input type="text" id="apellido" name="apellido" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+        </div>
+        <div class="mb-4">
+            <label for="edad" class="block text-sm font-medium text-gray-700">Edad</label>
+            <input type="number" id="edad" name="edad" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+        </div>
+        <div class="mb-4">
+            <label for="direccion" class="block text-sm font-medium text-gray-700">Dirección</label>
+            <input type="text" id="direccion" name="direccion" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+        </div>
+        <div class="mb-4">
+            <label for="sexo" class="block text-sm font-medium text-gray-700">Sexo</label>
+            <select id="sexo" name="sexo" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                <option value="">Seleccione</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+        <div class="mb-4">
+            <label for="obra_social" class="block text-sm font-medium text-gray-700">Obra Social</label>
+            <input type="text" id="obra_social" name="obra_social" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+        </div>
+        <div class="md:col-span-2">
+            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Agregar Paciente</button>
+        </div>
+    </form>
+    
+    <h3 class="text-xl font-bold mb-4">Lista de Pacientes</h3>
+    <div class="overflow-x-auto">
+        <table class="min-w-full bg-white border border-gray-300">
+            <thead>
+                <tr>
+                    <th class="py-2 px-4 border-b border-gray-300">Nombre</th>
+                    <th class="py-2 px-4 border-b border-gray-300">Apellido</th>
+                    <th class="py-2 px-4 border-b border-gray-300">Edad</th>
+                    <th class="py-2 px-4 border-b border-gray-300">Dirección</th>
+                    <th class="py-2 px-4 border-b border-gray-300">Sexo</th>
+                    <th class="py-2 px-4 border-b border-gray-300">Obra Social</th>
+                </tr>
+            </thead>
+            <tbody id="lista-pacientes">
+                <tr>
+                    <td class="py-2 px-4 border-b border-gray-300 text-center">Juan</td>
+                    <td class="py-2 px-4 border-b border-gray-300 text-center">Pérez</td>
+                    <td class="py-2 px-4 border-b border-gray-300 text-center">30</td>
+                    <td class="py-2 px-4 border-b border-gray-300 text-center">Calle Falsa 123</td>
+                    <td class="py-2 px-4 border-b border-gray-300 text-center">Masculino</td>
+                    <td class="py-2 px-4 border-b border-gray-300 text-center">OSDE</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b border-gray-300 text-center">María</td>
+                    <td class="py-2 px-4 border-b border-gray-300 text-center">García</td>
+                    <td class="py-2 px-4 border-b border-gray-300 text-center">25</td>
+                    <td class="py-2 px-4 border-b border-gray-300 text-center">Avenida Siempreviva 742</td>
+                    <td class="py-2 px-4 border-b border-gray-300 text-center">Femenino</td>
+                    <td class="py-2 px-4 border-b border-gray-300 text-center">Swiss Medical</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b border-gray-300 text-center">Carlos</td>
+                    <td class="py-2 px-4 border-b border-gray-300 text-center">López</td>
+                    <td class="py-2 px-4 border-b border-gray-300 text-center">40</td>
+                    <td class="py-2 px-4 border-b border-gray-300 text-center">Boulevard de los Sueños 456</td>
+                    <td class="py-2 px-4 border-b border-gray-300 text-center">Masculino</td>
+                    <td class="py-2 px-4 border-b border-gray-300 text-center">Hospital Italiano</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>

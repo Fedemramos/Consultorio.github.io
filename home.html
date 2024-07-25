@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMRv9a+4V/abmZP4h1/OZftjA2FnMJJWQFkpGJp" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/load_login.css">
+
+</head>
+
+<body class="flex items-center justify-center h-screen">
+    <!-- Contenedor principal con navbar integrado -->
+    <div class="bg-white shadow-lg rounded-lg flex flex-col w-11/12 md:w-4/5 max-w-4xl h-5/6 overflow-hidden">
+        <!-- Navbar -->
+        <nav class="bg-navbar text-gray-700 w-full p-4 flex flex-wrap items-center justify-between relative">
+            <div class="flex items-center">
+                <img src="static/image/logo.png" alt="Logo" class="h-8 w-10 mr-2">
+                <div class="text-lg font-bold text-black">CONSULTORIO</div>
+            </div>
+            
+            <button id="menu-button" class="md:hidden text-white bg-blue-600 hover:bg-blue-600 p-2 w-12 h-12 flex items-center justify-center rounded-lg transition duration-300">
+                <!-- Ícono SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            
+            <div id="menu-items" class="hidden md:flex md:items-center md:space-x-4">
+                <a href="#" onclick="loadPage('main.html'); setActive(this);" class="font-semibold py-2 px-4 transition duration-300 hover:text-blue-500">
+                    Inicio
+                </a>
+                <a href="#" onclick="loadPage('pacientes.html'); setActive(this);" class="font-semibold py-2 px-4 transition duration-300 hover:text-blue-500">
+                    Pacientes
+                </a>
+                <a href="#" onclick="loadPage('turnos.html'); setActive(this);" class="font-semibold py-2 px-4 transition duration-300 hover:text-blue-500">
+                    Turnos
+                </a>
+                <a href="#" onclick="loadPage('historial.html'); setActive(this);" class="font-semibold py-2 px-4 transition duration-300 hover:text-blue-500">
+                    Historial
+                </a>
+                <button id="logout" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full transition duration-200" onclick="window.location.href='index.html';">
+                    Salir
+                </button>
+            </div>
+            <div id="mobile-menu" class="absolute top-16 right-4 bg-gray-50 shadow-lg w-74 hidden md:hidden">
+                <div class="py-2 px-4">
+                    <a href="#" onclick="loadPage('main.html'); setActive(this);" class="block py-2 text-gray-700 hover:text-blue-500">Inicio</a>
+                    <a href="#" onclick="loadPage('pacientes.html'); setActive(this);" class="block py-2 text-gray-700 hover:text-blue-500">Pacientes</a>
+                    <a href="#" onclick="loadPage('turnos.html'); setActive(this);" class="block py-2 text-gray-700 hover:text-blue-500">Turnos</a>
+                    <a href="#" onclick="loadPage('historial.html'); setActive(this);" class="block py-2 text-gray-700 hover:text-blue-500">Historial</a>
+                    <button id="logout-mobile" class="block w-full bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full transition duration-200" onclick="window.location.href='index.html';">
+                    Salir
+                    </button>
+                </div>
+            </div>
+        </nav>
+        
+       <!-- Contenedor principal -->
+        <hr class="mx-4 md:mx-12 mt-1">
+        <div class="flex flex-grow overflow-hidden">
+            <!-- Contenido principal -->
+            <div id="main-content" class="w-full bg-white p-4 md:p-12 transition-width duration-300 overflow-y-auto">
+                <!-- El contenido se cargará aquí -->
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/main.js"></script>
+    <script src="static/js/scripts.js"></script>
+    <script src="static/js/turnos.js"></script>
+    <script src="static/js/pacientes.js"></script>
+    <script src="static/js/voice.js"></script>
+    <script src="static/js/animacionfondo.js"></script>
+
+    <script>
+        // JavaScript to toggle mobile menu
+        document.getElementById('menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.getElementById('logout-mobile').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        });
+    </script>
+
+    
+
+</body>
+</html>
