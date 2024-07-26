@@ -37,5 +37,5 @@ Este proyecto está construido para fácilitar el uso de los médicos y agilizar
 - **Herramientas y Servicios:**
   - GitHub Actions (para CI/CD)
 
-## Instalación
+
 
