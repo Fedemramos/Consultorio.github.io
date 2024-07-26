@@ -9,8 +9,9 @@ Este proyecto está construido para fácilitar el uso de los médicos y agilizar
 
 ## Inicio
 ![Captura de pantalla 2024-07-25 180229](https://github.com/user-attachments/assets/ea0ba3c9-6d94-4e24-9ba3-d9a929dbca6b)
-![Captura de pantalla 2024-07-25 180442](https://github.com/user-attachments/assets/c68a652b-658f-4930-8bf4-16cda24b1c00)
-![Captura de pantalla 2024-07-25 180457](https://github.com/user-attachments/assets/96df8512-0a8c-44ca-9f11-8c6179fd6ea4)
+
+## Menu
+![Captura de pantalla 2024-07-25 180442](https://github.com/user-attachments/assets/c68a652b-658f-4930-8bf4-16cda24b1c00) ![Captura de pantalla 2024-07-25 180457](https://github.com/user-attachments/assets/96df8512-0a8c-44ca-9f11-8c6179fd6ea4)
 
 
 ## Características
